@@ -4,9 +4,13 @@ window.onscroll=function() {
     var top=document.documentElement.scrollTop;
     var bottom=screen.height+top;
 
+    var screenW=screen.width;
+
     var div1_h=100;
     var x1=1750;
     var x2=3350;
+
+    if (screenW>1500) x2=x1;
 
     if (bottom>x1)
         if (top>=x2-div1_h)
